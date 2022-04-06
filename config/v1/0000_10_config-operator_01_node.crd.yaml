@@ -14,7 +14,7 @@ spec:
     listKind: NodeList
     plural: nodes
     singular: node
-  scope: Cluster
+  scope: Namespaced
   versions:
     - name: v1
       schema:
@@ -90,5 +90,9 @@ spec:
                             type: string
       served: true
       storage: true
-      subresources:
-        status: {}
+status:
+  acceptedNames:
+    kind: ""
+    plural: ""
+  conditions: []
+  storedVersions: []
